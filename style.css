@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-nav a:hover {
+  color: rgb(255, 217, 112);
+}
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar {
+  background-color: rgb(16, 16, 16);
+  border-bottom: solid rgb(70, 70, 70) 1px;
+}
+
+.navbar-brand {
+  height: 60px;
+}
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand span {
+  color: rgb(255, 187, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+#home {
+  background-image: url("img/background.png");
+}
+
+.home-title {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.taichan-text {
+  color: rgb(255, 187, 0);
+}
+
+.btn-home button {
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  font: 800;
+  color: white;
+  background-color: rgb(220, 151, 0);
+  padding: 7px 15px;
+}
+
+.btn-home button:hover {
+  background-color: rgb(250, 188, 53);
+  border-color: white;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.img-home {
+  margin-right: 7rem;
+}
+
+.menu-img {
+    width: 90%;
+}
+
+.judul-menu {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#service {
+  background-color: white;
+}
+
+.service {
+  font-size: 16px;
+}
+
+.line {
+  width: 50%;
+  margin: auto;
+  border: 0;
+  border-top: 3px double;
+}
+
+.takeaway {
+  width: 25%;
+}
+
+.logo-img {
+  width: 60%;
+}
+
+.all-menu-line {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+.all-menu-line:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.maps {
+  width: 550px;
+  height: 550px;
+}
+
+.footer-logo > img {
+  width: 50%;
+}
+
+#contact {
+  background-image: url("img/background.png");
+}
+
+@media (max-width: 1366px) {
+  .logo-img {
+    width: 70%;
+  }
+
+  .maps {
+    width: 100%;
+    height: 500px;
+  }
+  
+}
+
+@media (max-width: 1199.98px) {
+    .img-home img {
+        width: 120%;
+      }
+
+    .menu-img {
+        width: 100%;
+    }
+
+    .maps {
+      height: 450px;
+    }
+}
+@media (max-width: 991.98px) {
+    .img-home img {
+        width: 120%;
+      }
+
+      .home-title {
+        font-size: 2rem;
+      }
+
+      .row > .all-menu-img {
+        order: -1;
+      }
+    
+      .img-all-menu {
+        width: 70%;
+      }
+
+      .menu > h5 {
+        margin-bottom: 2.5rem;
+      }
+
+      .takeaway {
+        width: 50%;
+      }
+
+      .menu-img {
+        width: 90%;
+      }
+
+      .logo-img {
+        width: 40%;
+      }
+      
+      .img-all-menu {
+        width: 50%;
+      }
+
+      .maps {
+        width: 100%;
+        height: 400px;
+      }
+}
+@media (max-width: 900px) {
+
+
+  .img-home {
+    padding-top: 2rem;
+  }
+
+  .img-home img {
+    width: 130%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .takeaway {
+    width: 50%;
+  }
+
+  .menu-img {
+    width: 90%;
+    margin: auto; 
+    display: block;
+  }
+
+  .menu > h5 {
+    margin-bottom: 2.5rem;
+  }
+
+  .logo-img {
+    width: 40%;
+  }
+
+  .img-all-menu {
+    width: 50%;
+  }
+
+  .maps {
+    width: 100%;
+    height: 400px;
+  }
+
+}
+@media (max-width: 767.98px) {
+
+
+  .row > .img-div {
+    order: -1;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.1);
+  }
+
+  .img-home {
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .img-home img {
+    width: 60%;
+  }
+
+  .menu-img {
+    width: 60%;
+  }
+
+  .takeaway {
+    width: 15%;
+  }
+
+
+}
+@media (max-width: 575.98px) {
+
+
+
+  .img-home {
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .img-home img {
+    width: 80%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .btn-home button {
+    font-size: 14px;
+  }
+
+  .takeaway {
+    width: 20%;
+  }
+
+  .service {
+    font-size: 16px;
+  }
+
+  .judul-menu {
+    font-size: 2.3rem;
+  }
+
+  .menu-img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+ 
+  .menu > h5 {
+    margin-bottom: 2.5rem;
+  }
+
+  .logo-img {
+    width: 60%;
+  }
+
+  .maps {
+    width: 100%;
+    height: 300px;
+  }
+
+  .img-all-menu {
+    width: 80%;
+  }
+}
+
+@media (max-width: 325px) {
+  #home {
+    height: 470px;
+  }
+
+  .navbar-nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .navbar-brand {
+    height: 45px;
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .home-title {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width:290px) {
+
+    #home {
+        height: 400px;
+    }
+
+    .btn-home button {
+        font-size: 13px;
+      }
+}
